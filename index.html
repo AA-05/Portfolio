@@ -502,17 +502,28 @@
   <form onsubmit="sendEmail(); return false;">
     <input type="email" id="userEmail" placeholder="Enter Your Email" required>
     <button type="submit" class="subscribe-btn">
-      Send Message <i class="fal fa-comments-alt"></i> 
+      Send Message <i class="fal fa-comments-alt"></i>
     </button>
   </form>
 </div>
 
 <script>
 function sendEmail() {
-  const userEmail = document.getElementById('userEmail').value;
-  window.location.href = `mailto:akhilagnihotri95@gmail.com?subject=Portfolio New Contact&body=User Email: ${encodeURIComponent(userEmail)}`;
+  const userEmail = document.getElementById('userEmail').value.trim();
+
+  if (userEmail) {
+    // Open default email app with user email inside
+    window.location.href = `mailto:akhilagnihotri95@gmail.com?subject=New Contact&body=User Email: ${encodeURIComponent(userEmail)}`;
+
+    // Show success message
+    alert("Thanks for contacting!");
+    
+    // Optional: clear input field
+    document.getElementById('userEmail').value = "";
+  }
 }
 </script>
+
 
 
 

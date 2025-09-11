@@ -1,0 +1,9 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gear -->
+  <circle cx="60" cy="60" r="18" fill="#4ADE80" stroke="#000" stroke-width="2"></circle>
+  <path d="M60 35 L60 25 M60 95 L60 85 M35 60 L25 60 M95 60 L85 60 
+           M40 40 L32 32 M80 80 L88 88 M40 80 L32 88 M80 40 L88 32" stroke="#000" stroke-width="2"></path>
+  <!-- Wrench -->
+  <path d="M75 75 L95 95 M95 95 L90 100 L70 80" fill="none" stroke="#000" stroke-width="2"></path>
+  <circle cx="95" cy="95" r="3" fill="#4ADE80" stroke="#000" stroke-width="1"></circle>
+</svg>

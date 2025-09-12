@@ -48,6 +48,9 @@ FOOTER AREA CSS
 ==========================
 */
 
+
+
+
 .header-banner-area {
     background: #2E3D44;
     position  : relative;
@@ -1988,16 +1991,69 @@ a.up-btn:hover {
   vertical-align: top;
 }
 
+.circle {
+    position: relative;           /* Needed for absolute child positioning */
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #22cd6f;           /* example background color */
+    margin: 15px auto;
+}
+
+/* Percentage text inside circle */
 .circle strong {
     position: absolute;
     top: 48px;
     left: 0;
     width: 100%;
     text-align: center;
-    line-height: 42px;
+    line-height: 48px;
     font-size: 48px;
     color: #fff;
     font-family: 'Oswald', sans-serif;
+}
+
+/* Skill name text */
+.circle span {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Responsive grid */
+.skill__circles .colsm6 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+    .skill__circles .col-lg-3 {
+        width: 25%;
+        float: left;
+    }
+}
+
+/* Responsive font adjustments for mobile */
+@media (max-width: 576px) {
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+    .circle strong {
+        font-size: 28px;
+        top: 35px;
+        line-height: 28px;
+    }
+    .circle span {
+        font-size: 12px;
+    }
 }
 .circle strong i {
     font-style: normal;
